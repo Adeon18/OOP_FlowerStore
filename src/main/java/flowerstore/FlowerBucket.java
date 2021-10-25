@@ -10,9 +10,11 @@ import java.util.List;
 @Setter @Getter
 public class FlowerBucket {
     List<FlowerPack> flowerPacks = new ArrayList<FlowerPack>();
+    public List<Flower> flowers = new ArrayList<Flower>();
 
     public void addFlowerPack(FlowerPack flowerPack) {
         flowerPacks.add(flowerPack);
+        flowers.add(flowerPack.getFlower());
     }
 
     public double getPrice() {
