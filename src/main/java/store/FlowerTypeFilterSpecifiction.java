@@ -4,7 +4,6 @@ import flowerstore.Flower;
 import flowerstore.FlowerType;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class FlowerTypeFilterSpecifiction extends FlowerFilterSpecification{
     private FlowerType flowerType;
