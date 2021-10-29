@@ -7,7 +7,8 @@ import lombok.ToString;
 import java.util.Arrays;
 
 @Getter @Setter @ToString
-public class Flower {
+public class Flower extends Item{
+
     private double price;
     private double sepalLength;
     // RGB representation - can also be enum
@@ -23,5 +24,16 @@ public class Flower {
 
     public Flower(FlowerType flowerType) {
         this.flowerType = flowerType;
+    }
+
+    @Override
+    public double getPrice() {
+        // A custome getter to return the price
+        return price;
+    }
+
+    @Override
+    public String getDescription() {
+        return "This flower is cool.";
     }
 }
