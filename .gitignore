@@ -1,5 +1,4 @@
 # Project exclude paths
 /target/
-.attach_pid38337
-.attach_pid38467
+.attach*
 .idea
